@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class loops {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		System.out.println("ENter a sentence");
+		String a = scan.nextLine();
+		//System.out.println(a);
+		String b= a.trim();
+		String c= b.replace(" ","-");
+		System.out.println(c);
+		for (int i =0;i<b.length();i++)
+		{
+			System.out.println(b.charAt(i));
+		}
+		
+	}
+
+}

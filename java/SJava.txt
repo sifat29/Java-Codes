@@ -1,0 +1,59 @@
+public class Task {
+
+	public static void main(String[] args) {
+		
+				//shallow copy
+				int[] a= {1,2,3};
+				int[] b;
+				b=a;
+				System.out.println("this is before shallow copy of array a ");
+				for (int i:a)
+				{
+				System.out.println(i+" ");
+				}
+				System.out.println("this is before shallow copy of array b ");
+				for(int i:b)
+				{
+					System.out.println(i+" ");
+				}
+				a[1]=1000;
+				System.out.println("this is before shallow copy of array a ");
+				for (int i:a)
+				{
+					System.out.println(i+" ");
+				}
+				System.out.println("this is before shallow copy of array b ");
+				for (int i:b)
+				{
+					System.out.println(i+" ");
+				}
+				//deep copy
+				
+				int a1[]= {1,2,3};
+				int b1[];
+				b1=a1.clone();
+				System.out.println("this is before deep copy of array a1 ");
+				for (int i:a1)
+				{
+				System.out.println(i+" ");
+				}
+				System.out.println("this is before deep copy of array b1 ");
+				for(int i:b1)
+				{
+					System.out.println(i+" ");
+				}
+				a1[1]=1000;
+				System.out.println("this is before deep copy of array a1 ");
+				for (int i:a1)
+				{
+					System.out.println(i+" ");
+				}
+				System.out.println("this is before deep copy of array b1 ");
+				for (int i:b1)
+				{
+					System.out.println(i+" ");
+				}
+			}
+			
+
+		}
